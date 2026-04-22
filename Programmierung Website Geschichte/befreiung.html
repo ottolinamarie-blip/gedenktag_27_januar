@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Befreiung</title>
+<link rel="stylesheet" href="befreiung.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="top-line"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="geschichte.html">Geschichte</a></li>
+            <li><a href="befreiung.html" class="active">Die Befreiung</a></li>
+            <li><a href="der-holocaust-und-ich.html">Der Holocaust und ich</a></li>
+            <li><a href="gedenkstaetten.html">Gedenkstätte</a></li>
+            <li><a href="mitmachen.html">Mitmachen</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Overlay -->
+<div id="overlay">
+  <div class="overlay-box">
+    <p>Hinweis: Dieses Video geht 1:32 min und dient als optionales Vorwissen. Bitte klicke auf "OK".</p>
+    <button onclick="startVideo()">OK</button>
+  </div>
+</div>
+
+<!-- Video -->
+<section class="hero">
+  <iframe id="video"
+      style="display:none;"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen>
+  </iframe>
+</section>
+
+<script>
+  // ❌ mute entfernt → Ton ist möglich
+  const youtubeURL = "https://www.youtube.com/embed/QDSx5RR-1t4?autoplay=1";
+
+  function startVideo() {
+    document.getElementById("overlay").style.display = "none";
+
+    const iframe = document.getElementById("video");
+    iframe.src = youtubeURL;
+    iframe.style.display = "block";
+  }
+</script>
+
+<section id="befreiung">
+  <h1>Die Befreiung am 27. Januar 1945</h1>
+
+   <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Auschwitz_Liberated_January_1945.jpg" alt="Befreiung von Auschwitz im Januar 1945">
+    <figcaption>Befreite Häftlinge in Auschwitz im Januar 1945</figcaption>
+  </figure>
+
+ <p>
+  Am 27. Januar 1945 erreichten sowjetische Soldaten das Lager Auschwitz-Birkenau im besetzten Polen. Die deutschen SS-Wachmannschaften hatten das Lager zuvor weitgehend geräumt und viele Gefangene auf sogenannte Todesmärsche in andere Lager im Reichsgebiet geschickt. Dennoch fanden die Soldaten noch etwa 7.000 Häftlinge vor, die aufgrund von Hunger, Krankheiten und Misshandlungen nicht mehr evakuiert werden konnten. Für sie bedeutete das Eintreffen der Truppen das Ende unmittelbarer Lebensgefahr und die Befreiung aus der nationalsozialistischen Vernichtungsmaschinerie.
+ </p>
+
+ <p>
+  Auschwitz-Birkenau war das größte Konzentrations- und Vernichtungslager des NS-Regimes und ein zentraler Ort des Holocaust. Mehr als eine Million Menschen, überwiegend Jüdinnen und Juden aus ganz Europa, wurden dort ermordet. Auch politische Gefangene, Roma und Sinti sowie andere verfolgte Gruppen waren Opfer des Systems.
+ </p>
+
+ <p>
+  Der 27. Januar wurde später bewusst als Gedenktag gewählt, um an die Opfer des Nationalsozialismus zu erinnern und die historische Verantwortung wachzuhalten. In Deutschland ist dieser Tag seit 1996 offizieller Gedenktag, international wird er unter anderem von den Vereinten Nationen als Holocaust-Gedenktag begangen. Er dient nicht nur dem Erinnern an die Befreiung von Auschwitz, sondern auch dem Gedenken an alle Opfer von Verfolgung, Terror und Völkermord während der NS-Zeit.
+ </p>
+
+</body>
+</html>
+
+
+
+
+
+
+
